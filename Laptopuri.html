@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/font-awesome.css" type="text/css">
 	  <link rel="stylesheet" href="css/style laptopuri.css" type="text/css">
+    <link rel="stylesheet" href="css/media.css" type="text/css">
     <link rel="apple-touch-icon" sizes="57x57" href="icon/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="icon/apple-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="icon/apple-icon-72x72.png">
@@ -29,43 +30,57 @@
     <title>device.md</title>
 </head>
 <body>
-    <header>
-        <nav class="dws-menu">
-            <ul>
-                <li><a href="index.html"><i class="fa fa-home"></i>Pagina Principala</a></li>
-                <li><a href="#"><i class="fa fa-shopping-cart"></i>Asortiment</a>
-                    <ul>
-                        <li><a href="Accesorii.html">Accesorii</a>
-                            <ul>
-                                <li><a href="Casti.html">Casti</a></li>
-                                <li><a href="Huse.html">Huse</a></li>
-                                <li><a href="Altele.html">Altele</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="Laptopuri.html">Laptopuri</a>
-                            <ul>
-                                <li><a href="Asus.html">Asus</a></li>
-                                <li><a href="Acer.html">Acer</a></li>
-                                <li><a href="Lenovo.html">Lenovo</a></li>
-                                </li>
-                            </ul>
-                        </li>
-                        <li><a href="Telefoane.html">Telefoane</a>
-                            <ul>
-                                <li><a href="Xiaomi.html">Xiaomi</a></li>
-                                <li><a href="Samsung.html">Samsung</a></li>
-                                <li><a href="Apple.html">Apple</a></li>
-                                </ul>
-                                </li>
-                        <li><a href="Smart watch.html">Smart Watch</a></li>
-                    </ul>
+  <header>
+    <nav class="dws-menu">
+      <input type="checkbox" name="toggle" id="menu" class="toggleMenu">
+      <label for="menu" class="toggleMenu"><i class="fa fa-bars"></i>Meniu</label>
+      <ul>
+        <li><a href="index.html"><i class="fa fa-home"></i>Pagina Principala</a></li>
+        <li>
+        <input type="checkbox" name="toggle" class="toggleSubmenu" id="sub_m1">
+        <a href="#"><i class="fa fa-shopping-cart"></i>Asortiment</a>
+        <label for="sub_m1" class="toggleSubmenu"><i class="fa"></i></label>
+          <ul>
+            <li>
+            <input type="checkbox" name="toggle" class="toggleSubmenu" id="sub_m1-1">
+            <a href="Accesorii.html">Accesorii</a>
+            <label for="sub_m1-1" class="toggleSubmenu"><i class="fa"></i></label>
+              <ul>
+                <li><a href="Casti.html">Casti</a></li>
+                <li><a href="Huse.html">Huse</a></li>
+                <li><a href="Altele.html">Altele</a></li>
+              </ul>
+            </li>
+            <li>
+              <input type="checkbox" name="toggle" class="toggleSubmenu" id="sub_m1-2">
+              <a href="Laptopuri.html">Laptopuri</a>
+              <label for="sub_m1-2" class="toggleSubmenu"><i class="fa"></i></label>
+              <ul>
+                <li><a href="Asus.html">Asus</a></li>
+                <li><a href="Acer.html">Acer</a></li>
+                <li><a href="Lenovo.html">Lenovo</a></li>
                 </li>
-    
-                <li><a href="#"><i class="fa fa-th-list"></i>Noutati</a></li>
-                <li><a href="#"><i class="fa fa-envelope-open"></i>Contacte</a></li>
-            </ul>
-        </nav>
-    </header>
+              </ul>
+            </li>
+            <li>
+            <input type="checkbox" name="toggle" class="toggleSubmenu" id="sub_m1-2-1">
+              <a href="Telefoane.html">Telefoane</a>
+              <label for="sub_m1-2-1" class="toggleSubmenu"><i class="fa"></i></label>
+              <ul>
+                <li><a href="Xiaomi.html">Xiaomi</a></li>
+                <li><a href="Samsung.html">Samsung</a></li>
+                <li><a href="Apple.html">Apple</a></li>
+                </ul>
+                </li>
+            <li><a href="Smart watch.html">Smart Watch</a></li>
+          </ul>
+        </li>
+  
+        <li><a href="#"><i class="fa fa-th-list"></i>Noutati</a></li>
+        <li><a href="#"><i class="fa fa-envelope-open"></i>Contacte</a></li>
+      </ul>
+    </nav>
+  </header>
 
     <div class="product-item">
       <img src="imagini laptopuri/Acer Nitro AN515-44.png">
