@@ -1,7 +1,9 @@
 body{
-  background-image: url("../imagini/dev1.jpg");
- }
-
+  background-image: url('imagini/dev1.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
 header{
  margin-top: 25px;
  font-family: 'Fjalla One', sans-serif;
