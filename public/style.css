@@ -86,15 +86,14 @@ header{
 #text {
   display: flex;
   justify-content: center;
-  margin-top: 15vw;
-  position:relative;
+  margin-top: 300px;
   color: white;
-  font-size: 5vw;
+  font-size: 100px;
   text-shadow: 0px 0px 6px rgba(255,255,255,0.7);
   font-family: 'Fjalla One', sans-serif;
    }
    
-   .comanda-btn {
+   #comanda-btn {
     display: inline-flex ;
     left: 50%;
     margin-top:4%;
@@ -110,18 +109,9 @@ header{
      background: #337AB7;
      cursor: pointer;
      border: 2px solid #BFE2FF;
-     outline: 1px solid;
-     outline-color: #337AB7;
-     outline-offset: 0px;
-     text-shadow: none;
-     transition: all 1.5s cubic-bezier(0.19, 1, 0.22, 1);  
  }
- .comanda-btn:hover,
- .comanda-btn:active,
- .comanda-btn:focus {
-     box-shadow: inset 0 0 20px #BFE2FF;
-     outline-color: rgba(255, 255, 255, 0);
-     outline-offset: 15px;
-     color: #FFF;
- }
+ 
+ #comanda-btn:hover{
+  opacity: 60%;
+   }
   

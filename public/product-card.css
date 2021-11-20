@@ -8,14 +8,12 @@
     margin: 0 auto;
     border-bottom: 2px solid #F5F5F5;
     background: white;
-    padding: 2px;
     border: solid #746c6c;
     float: left;
     position: relative;
     margin-top: 4%;
     left: 55px;
     font-family: "Open Sans";
-    transition: .3s ease-in;
  }
  .product-item:hover {
     border-bottom: 2px solid #fc5a5a;
@@ -48,7 +46,6 @@
     color: white;
     font-size: 16px;
     line-height: 28px;
-    transition: .3s ease-in;
  }
  .product-item:hover .button {
     background: #fc5a5a;
@@ -65,14 +62,12 @@
     margin: 0 auto;
     border-bottom: 2px solid #F5F5F5;
     background: white;
-    padding: 2px;
     /*border: solid #746c6c;*/
     float: left;
     position: relative;
     margin-top: 4%;
     left: 55px;
     font-family: "Open Sans";
-    transition: .3s ease-in;
  }
  .product-item:hover {
     border-bottom: 2px solid #fc5a5a;
@@ -105,8 +100,25 @@
     color: white;
     font-size: 16px;
     line-height: 28px;
-    transition: .3s ease-in;
  }
  .product-item:hover .button {
     background: #fc5a5a;
  }
+
+ @media(max-width:594px){
+   .product-item{
+      margin-left: 40px;
+   }
+}
+
+@media(max-width:486px){
+  .product-item{
+     margin-left: -10px;
+  }
+}
+
+@media(max-width:375px){
+  .product-item{
+   margin-left: -20px;
+  }
+}
