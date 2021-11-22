@@ -52,59 +52,6 @@
  }
  
  
- 
- 
- 
-
- .product-item {
-    width: 300px;
-    text-align: center;
-    margin: 0 auto;
-    border-bottom: 2px solid #F5F5F5;
-    background: white;
-    /*border: solid #746c6c;*/
-    float: left;
-    position: relative;
-    margin-top: 4%;
-    left: 55px;
-    font-family: "Open Sans";
- }
- .product-item:hover {
-    border-bottom: 2px solid #fc5a5a;
- }
- .product-item img {
-    display: block;
-    width: 100%;
- }
- .product-list {
-    background: #fafafa;
-    padding: 15px 0;
- }
- .product-list h3 {
-    font-size: 20px;
-    font-weight: 400;
-    color: #444444;
-    margin: 0 0 10px 0;
- }
- .price {
-    font-size: 18px;
-    color: #fc5a5a;
-    display: block;
-    margin-bottom: 12px;
- }
- .button {
-    text-decoration: none;
-    display: inline-block;
-    padding: 0 12px;
-    background: #cccccc;
-    color: white;
-    font-size: 16px;
-    line-height: 28px;
- }
- .product-item:hover .button {
-    background: #fc5a5a;
- }
-
  @media(max-width:594px){
    .product-item{
       margin-left: 40px;
