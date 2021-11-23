@@ -104,6 +104,9 @@ html, body {
 .color-choose input[type="radio"]#black + label span {
   background-color: #323232;
 }
+.color-choose input[type="radio"]#gray + label span {
+  background-color: #747171;
+}
 
 
 .cable-choose {
