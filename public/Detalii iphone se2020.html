@@ -2,13 +2,13 @@
 <html lang="en">
 
 <head>
-  	<meta charset="UTF-8">
-  	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-  	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-  	<link rel="stylesheet" href="css/font-awesome.css" type="text/css">
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/font-awesome.css" type="text/css">
 	<link rel="stylesheet" href="menu.css" type="text/css">
 	<link rel="stylesheet" href="css/media.css" type="text/css">
-  	<link rel="stylesheet" href="details.css">
+	<link rel="stylesheet" href="details.css">
 	<link rel="apple-touch-icon" sizes="57x57" href="icon/apple-icon-57x57.png">
 	<link rel="apple-touch-icon" sizes="60x60" href="icon/apple-icon-60x60.png">
 	<link rel="apple-touch-icon" sizes="72x72" href="icon/apple-icon-72x72.png">
@@ -26,17 +26,17 @@
 	<meta name="msapplication-TileColor" content="#ffffff">
 	<meta name="msapplication-TileImage" content="ico/ms-icon-144x144.png">
 	<meta name="theme-color" content="#ffffff">
-  	<meta name="robots" content="noindex,follow">
-  	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
-  	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<meta name="robots" content="noindex,follow">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
-  	<title>device.md</title>
+	<title>device.md</title>
 </head>
 
 <body>
 
-  <header>
+	<header>
 		<nav class="dws-menu">
 			<input type="checkbox" name="toggle" id="menu" class="toggleMenu">
 			<label for="menu" class="toggleMenu"><i class="fa fa-bars"></i>Meniu</label>
@@ -89,70 +89,38 @@
 	</header>
 
 
-  <main class="container">
-    <div class="left-column">
-      <img data-image="black" src="imagini telefoane/apple iphone se 2020.png" alt="">
-      <img data-image="white" src="imagini telefoane/apple_iphone_se_2020_white1_zg4a-41.png" alt="">
-      <img data-image="red" class="active" src="imagini telefoane/apple_iphone_se_2020_red1.png" alt="">
-    </div>
-
-    <div class="right-column">
-
-      <div class="product-description">
-        <h1>Apple iPhone SE 2020</h1>
-        <pre>
-
- Dimensiune ecran:	4.7''
- Cameră din spate:	12 MP
- Cameră frontală:	7 MP
- Capacitatea bateriei:	1821 mAh
- Sistem de operare:	iOS 13
- CPU:	                Apple A13 Bionic
-          </pre>
-      </div>
-
-      <div class="product-configuration">
-
-        <div class="product-color">
-          <span>Culoarea</span>
-
-          <div class="color-choose">
-            <div>
-              <input data-image="red" type="radio" id="red" name="color" value="red" checked>
-              <label for="red"><span></span></label>
-            </div>
-            <div>
-              <input data-image="white" type="radio" id="white" name="color" value="white">
-              <label for="white"><span></span></label>
-            </div>
-            <div>
-              <input data-image="black" type="radio" id="black" name="color" value="black">
-              <label for="black"><span></span></label>
-            </div>
-          </div>
-
-        </div>
-
-        <div class="cable-config">
-          <span>Alegeți opțiunea</span>
-
-          <div class="cable-choose">
-            <button>3/64GB</button>
-            <button>3/128GB</button>
-            <button>3/256GB</button>
-          </div>
-        </div>
-      </div>
-
-      <div class="product-price">
-        <span>10000 MDL</span>
-        <a href="#" class="cart-btn">Comandă</a>
-      </div>
-    </div>
-  </main>
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js" charset="utf-8"></script>
-  <script src="script.js" charset="utf-8"></script>
+	<div class="page">
+		<div class="left-content">
+			<img src="imagini telefoane/apple_iphone_se_2020_red1.png" alt="">
+		</div>
+		<div class="right-content">
+			<h1>iPhone SE 2020</h1>
+			<p id="description">
+				Dimensiune ecran: 4.7'' <br>
+				Cameră din spate: 12 MP <br>
+				Cameră frontală: 7 MP <br>
+				Capacitatea bateriei: 1821 mAh <br>
+				Sistem de operare: iOS 13 <br>
+				CPU: Apple A13 Bionic <br>
+			</p>
+			<div class="line"></div>
+			<p>Culoarea</p>
+			<!--color chose-->
+			<button id="black"></button>
+			<button id="white"></button>
+			<button id="red"></button>
+			<!--select option-->
+			<p>Alegeti optiunea</p>
+			<button id="option1">3/64GB</button>
+			<button id="option2">3/128GB</button>
+			<button id="option3">3/256GB</button>
+			<div class="line2"></div>
+			<div class="price">
+				<span>10000 MDL</span>
+				<button id="btn2">Comandă</button>
+			</div>
+		</div>
+	</div>
 </body>
 
 </html>
