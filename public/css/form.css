@@ -1,11 +1,21 @@
 .page{
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    margin-top: 100px;
+    grid-template-columns: 500px 500px;
+    grid-column-gap: 60px;
+    justify-content: center;
+    margin-top: 120px;
 }
 
 .left-column, .right-column{
     display: grid;
-    justify-content: center;
+    grid-row-gap: 30px;
+}
+
+input, select{
+    width: 500px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
 }
 
