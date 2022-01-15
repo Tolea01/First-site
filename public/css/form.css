@@ -1,0 +1,11 @@
+.page{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 100px;
+}
+
+.left-column, .right-column{
+    display: grid;
+    justify-content: center;
+}
+
