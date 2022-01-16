@@ -88,11 +88,9 @@ button#option1:focus, button#option2:focus, button#option3:focus{
 }
 
 .price{
-  display: grid;
-  grid-template-columns: 170px 200px;
- margin-top: 20px;
- font-family: Arial, Helvetica, sans-serif;
-
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
 }
 
 span{
@@ -105,13 +103,19 @@ span{
 
 button#btn2{
   background-color: rgb(177, 37, 37);
-  height: 50px;
-  width: 120px;
+  width: 150px;
+  height: 45px;
   border-radius: 7px;
-  color: white;
-  font-size: 20px;
   border: none;
   cursor: pointer;
+  margin-left: 13px;
+  margin-top: 5px;
+}
+
+button#btn2 a{
+  font-size: 20px;
+  color: white;
+  text-decoration: none;
   font-family: Arial, Helvetica, sans-serif;
 }
 
