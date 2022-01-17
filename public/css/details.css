@@ -62,7 +62,7 @@ button#black:hover, button#white:hover, button#red:hover{
 button#option1, button#option2, button#option3{
   height: 35px;
   width: 90px;
-  border-radius: 10%;
+  border-radius: 5px;
   border: none;
   font-size: 16px;
   color: rgb(59, 55, 55);
