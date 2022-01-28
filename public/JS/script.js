@@ -11,6 +11,7 @@ form.onclick = function (event) {
     var error = document.getElementById('error');
 
 
+
     for (var i = 0; i < inputs.length; i++) {
         if (inputs[i].value == "") {
             inputs[i].classList.add('input-error');
@@ -21,27 +22,46 @@ form.onclick = function (event) {
     }
 
 
+
     if (name == '' || first_name == '' || email == '' || adress == '' || card_number == '' || security_cod == '') {
         error.innerHTML = 'Compleați câmpurile goale!';
     }
 
-    else if(name.length <= 2){
+    else if (name.length <= 2) {
         document.getElementById('name').classList.add('input-error');
         error.innerHTML = 'Numele trebuie să conțină mai mult de 2 litere!';
     }
 
-    else if(first_name.length == 1){
+    else if (first_name.length == 1) {
         document.getElementById('first-name').classList.add('input-error');
         error.innerHTML = 'Prenumele este scris incorect!';
     }
 
-    else if(email.split('@').length == 1 || email.split('.').length == 1){
+    else if (email.split('@').length == 1 || email.split('.').length == 1) {
         document.getElementById('email').classList.add('input-error')
-        error.innerHTML = 'Introduceți poșta electronică'
+        error.innerHTML = 'Introduceți poșta electronică!'
     }
 
-    else{
-        window.location.reload()
+    else if (adress.length <= 5 || adress.length >= 45) {
+        document.getElementById('adress').classList.add('input-error')
+        error.innerHTML = "Introduceți corect adresa domiciliului!"
+    }
+
+    else if (card_number.length <= 15 || card_number.length > 16) {
+        document.getElementById('card-number').classList.add('input-error')
+        error.innerHTML = 'Introduceți corect numărul cardului'
+    }
+
+    else if (security_cod.length <= 2 || security_cod.length > 3) {
+        document.getElementById('security-code').classList.add('input-error')
+        error.innerHTML = 'Introduceți corect codul de securitate'
+    }
+
+    else {
+        for (var i = 0; i < inputs.length; i++) {
+            inputs[i].value = "";
+        }
+        window.location.reload();
     }
 
 
