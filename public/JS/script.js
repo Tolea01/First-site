@@ -1,4 +1,18 @@
 var form = document.getElementById('form-button');
+var product_select1 = document.getElementById('product-category');
+var product_select2 = document.getElementById('product-type');
+
+
+product_select1.onchange = function (){
+    if(product_select1.value == 'Accesorii'){
+        document.querySelectorAll('.laptop-product').style.display = "none";
+        // document.getElementsByClassName("laptop-product").className.remove('laptop-product');
+        // document.getElementsByClassName('smart-watch-product').classList.add('remove-product')
+    }
+}
+
+
+
 form.onclick = function (event) {
     event.preventDefault();
     var inputs = document.getElementsByTagName('input');
@@ -9,6 +23,7 @@ form.onclick = function (event) {
     var card_number = document.getElementById('card-number').value;
     var security_cod = document.getElementById('security-code').value;
     var error = document.getElementById('error');
+
 
 
 
@@ -63,6 +78,7 @@ form.onclick = function (event) {
         }
         window.location.reload();
     }
+
 
 
 }

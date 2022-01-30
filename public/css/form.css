@@ -99,3 +99,7 @@ button:hover{
      display: flex;
      justify-content: center;
  }
+
+ .remove-product{
+     display: none;
+ }
