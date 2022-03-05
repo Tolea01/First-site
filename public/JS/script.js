@@ -5,13 +5,44 @@ var product_select2 = document.getElementById('product-type');
 
 
 product_select1.onchange = function (){
-    var telephon = document.getElementsByClassName('telephon-product')
-    if(product_select1.value == 'Accesorii'){
-        for(var i = 0; i < telephon.length; i++){
-            telephon[i].style.cssText = 'display: none'
+    var telephon = document.getElementsByClassName('telephon-product');
+    var accesory = document.getElementsByClassName('accessory-product');
+    var laptop = document.getElementsByClassName('laptop-product');
+    var watch = document.getElementsByClassName('smart-watch-product') 
+
+    function deleteProduct(product1, product2, product3){
+        for(var i = 0; i < product1.length; i++){
+            product1[i].style.cssText = 'display: none';
+        }
+        for(var i = 0; i < product2.length; i++){
+            product2[i].style.cssText = 'display: none';
+        }
+        for(var i = 0; i < product3.length; i++){
+            product3[i].style.cssText = 'display: none';
         }
     }
-}
+
+
+
+    if (product_select1.value == 'Accesorii'){
+        deleteProduct(telephon, laptop, watch);
+    }
+
+    else if (product_select1.value == 'Telefoane'){
+        deleteProduct(accesory, laptop, watch);
+    }
+
+    else if (product_select1.value == 'Laptopuri'){
+        deleteProduct(accesory, telephon, watch);
+    }
+
+    else if (product_select1.value == 'Smart Watch'){
+        deleteProduct(accesory, laptop, telephon);
+    }
+    else{}
+ 
+    }
+
 
 
 
@@ -55,23 +86,27 @@ form.onclick = function (event) {
     }
 
     else if (email.split('@').length == 1 || email.split('.').length == 1) {
-        document.getElementById('email').classList.add('input-error')
-        error.innerHTML = 'Introduceți poșta electronică!'
+        document.getElementById('email').classList.add('input-error');
+        error.innerHTML = 'Introduceți poșta electronică!';
     }
 
     else if (adress.length <= 5 || adress.length >= 45) {
-        document.getElementById('adress').classList.add('input-error')
-        error.innerHTML = "Introduceți corect adresa domiciliului!"
+        document.getElementById('adress').classList.add('input-error');
+        error.innerHTML = 'Introduceți corect adresa domiciliului!';
     }
 
     else if (card_number.length <= 15 || card_number.length > 16) {
-        document.getElementById('card-number').classList.add('input-error')
-        error.innerHTML = 'Introduceți corect numărul cardului'
+        document.getElementById('card-number').classList.add('input-error');
+        error.innerHTML = 'Introduceți corect numărul cardului';
     }
 
     else if (security_cod.length <= 2 || security_cod.length > 3) {
-        document.getElementById('security-code').classList.add('input-error')
-        error.innerHTML = 'Introduceți corect codul de securitate'
+        document.getElementById('security-code').classList.add('input-error');
+        error.innerHTML = 'Introduceți corect codul de securitate';
+    }
+
+    else if (product_select1.value == 'Alegeți categoria produsului' || product_select2.value == 'Alegeți produsul'){
+        error.innerHTML = 'Alegeți categoria și produsul acesteia';
     }
 
     else {
@@ -80,8 +115,6 @@ form.onclick = function (event) {
         }
         window.location.reload();
     }
-
-
 
 }
 
